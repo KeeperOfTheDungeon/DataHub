@@ -7,7 +7,13 @@ LEG_SENSORS_ID = 13
 
 class AntDeviceConfig:
     MAIN_DATA_HUB = {"DeviceId": MAIN_DATA_HUB_ID,
-                     "DeviceName": "Main Data Hub"}
+                     "DeviceName": "Main Data Hub",
+                     "interface_count": 2,
+                     "data_packet_pool_size": 10,
+                     "max_nodes": 50,
+                     "protocols" : ["ascii", "binary"],
+                     "channels" : [0,1,2,3,4,5,6]
+                    }
 
     HEAD_SENSORS = {"DeviceId": HEAD_SENSORS_ID,
                     "DeviceName": "head sensors"}
