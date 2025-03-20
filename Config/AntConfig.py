@@ -11,8 +11,10 @@ class AntDeviceConfig:
                      "interface_count": 2,
                      "data_packet_pool_size": 10,
                      "max_nodes": 50,
+                     "routing_type": 0, # either 0 "hub", 1 "node", 2 "endpoint"
                      "protocols" : ["ascii", "binary"],
-                     "channels" : [0,1,2,3,4,5,6]
+                     "channels" : [0,1,2,3,4,5,6],
+                     
                     }
 
     HEAD_SENSORS = {"DeviceId": HEAD_SENSORS_ID,
