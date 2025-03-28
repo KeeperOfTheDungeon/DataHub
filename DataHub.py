@@ -20,8 +20,8 @@ class MotionController(PicoDevice):
         super().__init__(device_meta_data)
         meta_data = dict()
         print("init motion")
-        meta_data["rx_pin"] = 1  # set receiver pin in meta data
-        meta_data["tx_pin"] = 0  # set transceiver pin in meta data
+        meta_data["rx_pin"] = 0+4  # set receiver pin in meta data
+        meta_data["tx_pin"] = 1+4  # set transceiver pin in meta data
         meta_data["clock_pin"] = 2
         self._connection = PicoConnection(meta_data)
         self.connect(self._connection)
